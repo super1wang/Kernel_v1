@@ -1,0 +1,10 @@
+Internal ctest changing into directory: J:/Code/Kernel/build/m0
+Test project J:/Code/Kernel/build/m0
+    Start 1: architecture.boundaries
+1/2 Test #1: architecture.boundaries .................   Passed    0.06 sec
+    Start 2: architecture.boundary_negative_probes
+2/2 Test #2: architecture.boundary_negative_probes ...   Passed    0.14 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.20 sec

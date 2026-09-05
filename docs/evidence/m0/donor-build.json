@@ -1,0 +1,15 @@
+{
+  "command": [
+    "cmake",
+    "--build",
+    "build/donor-release",
+    "--config",
+    "Release",
+    "--parallel",
+    "16"
+  ],
+  "cwd": "J:\\Code\\Kernel",
+  "started_utc": "2026-09-05T11:41:11.205971+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 69.05431320000207
+}

@@ -1,0 +1,38 @@
+适用于 .NET Framework MSBuild 版本 17.14.23+b0019275e
+
+  1>Checking Build System
+  lasercnc_foundation.vcxproj -> J:\Code\Kernel\build\donor-release\src\foundation\Release\lasercnc_foundation.lib
+  Building Custom Rule J:/Code/Kernel/.reference/spdlog-79524ddd/CMakeLists.txt
+  lasercnc_kernel.vcxproj -> J:\Code\Kernel\build\donor-release\src\kernel\Release\lasercnc_kernel.lib
+  sqlite3.c
+  Catch2.vcxproj -> J:\Code\Kernel\build\donor-release\_deps\catch2-build\src\Release\Catch2.lib
+  Catch2WithMain.vcxproj -> J:\Code\Kernel\build\donor-release\_deps\catch2-build\src\Release\Catch2Main.lib
+  lasercnc_kernel_tests.vcxproj -> J:\Code\Kernel\build\donor-release\tests\Release\lasercnc_kernel_tests.exe
+  lasercnc_foundation_tests.vcxproj -> J:\Code\Kernel\build\donor-release\tests\Release\lasercnc_foundation_tests.exe
+  spdlog.cpp
+  stdout_sinks.cpp
+  color_sinks.cpp
+  file_sinks.cpp
+  async.cpp
+  cfg.cpp
+  bundled_fmtlib_format.cpp
+  正在生成代码...
+  spdlog.vcxproj -> J:\Code\Kernel\build\donor-release\_deps\spdlog-build\Release\spdlog.lib
+  lcnc_dependency_sqlite.vcxproj -> J:\Code\Kernel\build\donor-release\Release\lcnc_dependency_sqlite.lib
+  toml_config_adapter.cpp
+  bs_thread_pool_executor.cpp
+  sha256_hash_service.cpp
+  spdlog_log_service.cpp
+  sqlite_persistence_backend.cpp
+  filesystem_snapshot_store.cpp
+  filesystem_asset_store.cpp
+  jsoncons_adapter.cpp
+  正在生成代码...
+  lasercnc_infrastructure.vcxproj -> J:\Code\Kernel\build\donor-release\src\infrastructure\Release\lasercnc_infrastructure.lib
+  lasercnc_persistence_session_probe.vcxproj -> J:\Code\Kernel\build\donor-release\tests\Release\lasercnc_persistence_session_probe.exe
+  lasercnc_kernel_drain_probe.vcxproj -> J:\Code\Kernel\build\donor-release\tests\Release\lasercnc_kernel_drain_probe.exe
+  lasercnc_close_snapshot_probe.vcxproj -> J:\Code\Kernel\build\donor-release\tests\Release\lasercnc_close_snapshot_probe.exe
+  lasercnc_kernel_benchmark.vcxproj -> J:\Code\Kernel\build\donor-release\tests\Release\lasercnc_kernel_benchmark.exe
+  lasercnc_kernel_headless_contract.vcxproj -> J:\Code\Kernel\build\donor-release\tests\Release\lasercnc_kernel_headless_contract.exe
+  lasercnc_lifecycle_catalog_probe.vcxproj -> J:\Code\Kernel\build\donor-release\tests\Release\lasercnc_lifecycle_catalog_probe.exe
+  lasercnc_infrastructure_tests.vcxproj -> J:\Code\Kernel\build\donor-release\tests\Release\lasercnc_infrastructure_tests.exe

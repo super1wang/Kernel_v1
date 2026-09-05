@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python",
+    "-c",
+    "import json,subprocess; subprocess.run(json.load(open('build/donor-configure.json',encoding='utf-8')),check=True)"
+  ],
+  "cwd": "J:\\Code\\Kernel",
+  "started_utc": "2026-09-05T11:41:10.582023+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.5444634000014048
+}
