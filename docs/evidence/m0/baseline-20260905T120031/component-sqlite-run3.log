@@ -1,0 +1,4 @@
+document.snapshot: median_ms=0.2594
+transaction.begin: median_ms=0.5338
+transaction.commit: median_ms=131.382
+benchmark-verified: J:/Code/Kernel/out/donor-baseline/component-sqlite-1000-59120-210325543374600/report.json

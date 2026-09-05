@@ -1,0 +1,4 @@
+journal.append: median_ms=141.816
+journal.recover_material: median_ms=13.4008
+kernel.bootstrap_recovery: median_ms=15.9893
+benchmark-verified: J:/Code/Kernel/out/donor-baseline/journal-sqlite-1000-44312-210334892575900/report.json

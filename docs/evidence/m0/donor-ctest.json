@@ -1,0 +1,16 @@
+{
+  "command": [
+    "ctest",
+    "--test-dir",
+    "build/donor-release",
+    "-C",
+    "Release",
+    "--output-on-failure",
+    "--output-junit",
+    "J:/Code/Kernel/docs/evidence/m0/donor-ctest.xml"
+  ],
+  "cwd": "J:\\Code\\Kernel",
+  "started_utc": "2026-09-05T11:42:28.638881+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 1012.809227699996
+}

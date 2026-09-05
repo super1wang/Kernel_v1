@@ -1,0 +1,4 @@
+document.snapshot: median_ms=0.3496
+transaction.begin: median_ms=0.6512
+transaction.commit: median_ms=1.47825
+benchmark-verified: J:/Code/Kernel/out/donor-baseline/component-memory-1000-40276-210325105848500/report.json

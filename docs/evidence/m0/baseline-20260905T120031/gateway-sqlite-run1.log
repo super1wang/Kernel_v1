@@ -1,0 +1,10 @@
+query.direct_handler: median_ms=0.0002
+command.direct_handler: median_ms=0.0002
+query.global_gateway: median_ms=0.01565
+command.global_gateway: median_ms=0.0162
+query.document_gateway: median_ms=0.2718
+command.document_readonly_gateway: median_ms=0.27875
+command.document_write_gateway: median_ms=132.177
+history.undo_gateway: median_ms=133.18
+history.redo_gateway: median_ms=133.09
+benchmark-verified: J:/Code/Kernel/out/donor-baseline/gateway-sqlite-1000-48516-210113680399600/report.json

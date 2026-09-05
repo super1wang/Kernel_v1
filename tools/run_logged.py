@@ -21,7 +21,7 @@ def main() -> int:
     with args.output.with_suffix(".log").open("xb") as log:
         completed = subprocess.run(command, stdout=log, stderr=subprocess.STDOUT)
     record.update(exit_code=completed.returncode, elapsed_seconds=time.monotonic() - start)
-    args.output.with_suffix(".json").write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    args.output.with_suffix(".json").write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(f"command-finished: exit={completed.returncode}; evidence={args.output}")
     return completed.returncode
 

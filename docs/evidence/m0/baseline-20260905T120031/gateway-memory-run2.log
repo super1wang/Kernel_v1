@@ -1,0 +1,10 @@
+query.direct_handler: median_ms=0.0002
+command.direct_handler: median_ms=0.0002
+query.global_gateway: median_ms=0.0142
+command.global_gateway: median_ms=0.0147
+query.document_gateway: median_ms=0.3729
+command.document_readonly_gateway: median_ms=0.42525
+command.document_write_gateway: median_ms=2.0765
+history.undo_gateway: median_ms=2.07185
+history.redo_gateway: median_ms=1.9522
+benchmark-verified: J:/Code/Kernel/out/donor-baseline/gateway-memory-1000-53080-210275671441500/report.json

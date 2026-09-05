@@ -1,0 +1,14 @@
+{
+  "command": [
+    "ctest",
+    "--test-dir",
+    "build/m0",
+    "-C",
+    "Release",
+    "--output-on-failure"
+  ],
+  "cwd": "J:\\Code\\Kernel",
+  "started_utc": "2026-09-05T12:04:59.564943+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 0.6279666000045836
+}

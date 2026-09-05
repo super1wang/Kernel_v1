@@ -1,0 +1,820 @@
+Internal ctest changing into directory: J:/Code/Kernel/build/donor-release
+Test project J:/Code/Kernel/build/donor-release
+        Start   1: Error retains an immutable cause chain
+  1/407 Test   #1: Error retains an immutable cause chain ...................................................................   Passed    0.06 sec
+        Start   2: Result separates success values from unified errors
+  2/407 Test   #2: Result separates success values from unified errors ......................................................   Passed    0.05 sec
+        Start   3: Result void supports value-less success
+  3/407 Test   #3: Result void supports value-less success ..................................................................   Passed    0.08 sec
+        Start   4: Schema owns kernel values and unit metadata only
+  4/407 Test   #4: Schema owns kernel values and unit metadata only .........................................................   Passed    0.07 sec
+        Start   5: Schema rejects invalid constraint and unit metadata
+  5/407 Test   #5: Schema rejects invalid constraint and unit metadata ......................................................   Passed    0.06 sec
+        Start   6: StrongId preserves type boundaries and stable strings
+  6/407 Test   #6: StrongId preserves type boundaries and stable strings ....................................................   Passed    0.11 sec
+        Start   7: StrongId rejects blank and control characters
+  7/407 Test   #7: StrongId rejects blank and control characters ............................................................   Passed    0.05 sec
+        Start   8: Value covers every kernel value type
+  8/407 Test   #8: Value covers every kernel value type .....................................................................   Passed    0.06 sec
+        Start   9: Value supports nesting without exposing a serializer
+  9/407 Test   #9: Value supports nesting without exposing a serializer .....................................................   Passed    0.08 sec
+        Start  10: Version provides stable semantic ordering
+ 10/407 Test  #10: Version provides stable semantic ordering ................................................................   Passed    0.05 sec
+        Start  11: AppKernel exposes document loading only during composition
+ 11/407 Test  #11: AppKernel exposes document loading only during composition ...............................................   Passed    0.06 sec
+        Start  12: AppKernel freezes only workflows with exact idempotent operations
+ 12/407 Test  #12: AppKernel freezes only workflows with exact idempotent operations ........................................   Passed    0.06 sec
+        Start  13: AppKernel governs object types through modules and read-only discovery
+ 13/407 Test  #13: AppKernel governs object types through modules and read-only discovery ...................................   Passed    0.05 sec
+        Start  14: AppKernel refuses registered runtimes without execution services
+ 14/407 Test  #14: AppKernel refuses registered runtimes without execution services .........................................   Passed    0.06 sec
+        Start  15: AppKernel refuses shutdown while a query execution is active
+ 15/407 Test  #15: AppKernel refuses shutdown while a query execution is active .............................................   Passed    0.06 sec
+        Start  16: AppKernel rejects invalid composition mutations
+ 16/407 Test  #16: AppKernel rejects invalid composition mutations ..........................................................   Passed    0.09 sec
+        Start  17: AppKernel rejects workflow operation drift before Ready
+ 17/407 Test  #17: AppKernel rejects workflow operation drift before Ready ..................................................   Passed    0.08 sec
+        Start  18: AppKernel runs one headless command and query chain
+ 18/407 Test  #18: AppKernel runs one headless command and query chain ......................................................   Passed    0.06 sec
+        Start  19: AppKernel state observers cannot write and persistence composition closes at startup
+ 19/407 Test  #19: AppKernel state observers cannot write and persistence composition closes at startup .....................   Passed    0.06 sec
+        Start  20: ApplicationTransaction commits objects revisions changes and events atomically
+ 20/407 Test  #20: ApplicationTransaction commits objects revisions changes and events atomically ...........................   Passed    0.03 sec
+        Start  21: ApplicationTransaction detects optimistic revision conflicts
+ 21/407 Test  #21: ApplicationTransaction detects optimistic revision conflicts .............................................   Passed    0.03 sec
+        Start  22: ApplicationTransaction is poisoned by any mutation failure
+ 22/407 Test  #22: ApplicationTransaction is poisoned by any mutation failure ...............................................   Passed    0.03 sec
+        Start  23: ApplicationTransaction rollback and abandonment leave no state
+ 23/407 Test  #23: ApplicationTransaction rollback and abandonment leave no state ...........................................   Passed    0.03 sec
+        Start  24: CapabilityService is deny by default and replaces exact grants
+ 24/407 Test  #24: CapabilityService is deny by default and replaces exact grants ...........................................   Passed    0.03 sec
+        Start  25: Command and query requests resolve compatible deprecated contracts explicitly
+ 25/407 Test  #25: Command and query requests resolve compatible deprecated contracts explicitly ............................   Passed    0.03 sec
+        Start  26: CommandRegistry keeps synchronous read-only handlers outside transactions
+ 26/407 Test  #26: CommandRegistry keeps synchronous read-only handlers outside transactions ................................   Passed    0.04 sec
+        Start  27: CommandRegistry resolves exact compatible and deprecated versions
+ 27/407 Test  #27: CommandRegistry resolves exact compatible and deprecated versions ........................................   Passed    0.04 sec
+        Start  28: CommandRuntime enforces schema capability project and revision before writes
+ 28/407 Test  #28: CommandRuntime enforces schema capability project and revision before writes .............................   Passed    0.04 sec
+        Start  29: CommandRuntime idempotency replays one commit and rejects key rebinding
+ 29/407 Test  #29: CommandRuntime idempotency replays one commit and rejects key rebinding ..................................   Passed    0.04 sec
+        Start  30: CommandRuntime rolls back handler failures exceptions and result schema errors
+ 30/407 Test  #30: CommandRuntime rolls back handler failures exceptions and result schema errors ...........................   Passed    0.04 sec
+        Start  31: Concurrent duplicate idempotency requests share one in-flight execution
+ 31/407 Test  #31: Concurrent duplicate idempotency requests share one in-flight execution ..................................   Passed    0.03 sec
+        Start  32: Concurrent transaction commits serialize with exactly one winner
+ 32/407 Test  #32: Concurrent transaction commits serialize with exactly one winner .........................................   Passed    0.03 sec
+        Start  33: DiagnosticsService runs checks outside locks and converts failures to reports
+ 33/407 Test  #33: DiagnosticsService runs checks outside locks and converts failures to reports ............................   Passed    0.03 sec
+        Start  34: DocumentRuntime blocks close while a document query is active
+ 34/407 Test  #34: DocumentRuntime blocks close while a document query is active ............................................   Passed    0.04 sec
+        Start  35: DocumentRuntime blocks close while a script remains active
+ 35/407 Test  #35: DocumentRuntime blocks close while a script remains active ...............................................   Passed    0.04 sec
+        Start  36: DocumentRuntime blocks close while a workflow remains active
+ 36/407 Test  #36: DocumentRuntime blocks close while a workflow remains active .............................................   Passed    0.03 sec
+        Start  37: DocumentRuntime owns runtime lifecycle while DocumentStore stays internal
+ 37/407 Test  #37: DocumentRuntime owns runtime lifecycle while DocumentStore stays internal ................................   Passed    0.02 sec
+        Start  38: DocumentRuntime rejects lifecycle changes outside Ready state
+ 38/407 Test  #38: DocumentRuntime rejects lifecycle changes outside Ready state ............................................   Passed    0.03 sec
+        Start  39: DocumentStore returns immutable snapshots with stable identity
+ 39/407 Test  #39: DocumentStore returns immutable snapshots with stable identity ...........................................   Passed    0.05 sec
+        Start  40: EffectGuardRegistry freezes stable guard identities
+ 40/407 Test  #40: EffectGuardRegistry freezes stable guard identities ......................................................   Passed    0.06 sec
+        Start  41: Empty net changes cannot advance revisions or release events
+ 41/407 Test  #41: Empty net changes cannot advance revisions or release events .............................................   Passed    0.04 sec
+        Start  42: Event subscription lifetime cancels pending delivery safely
+ 42/407 Test  #42: Event subscription lifetime cancels pending delivery safely ..............................................   Passed    0.03 sec
+        Start  43: EventBus contains subscriber failures and never holds its lock in callbacks
+ 43/407 Test  #43: EventBus contains subscriber failures and never holds its lock in callbacks ..............................   Passed    0.03 sec
+        Start  44: EventBus delivers committed domain facts with trace context
+ 44/407 Test  #44: EventBus delivers committed domain facts with trace context ..............................................   Passed    0.04 sec
+        Start  45: EventBus queues and coalesces notifications only
+ 45/407 Test  #45: EventBus queues and coalesces notifications only .........................................................   Passed    0.04 sec
+        Start  46: Execution registries reject unknown contract status across every handler family
+ 46/407 Test  #46: Execution registries reject unknown contract status across every handler family ..........................   Passed    0.05 sec
+        Start  47: ExecutionContext matches only its declared scope shape
+ 47/407 Test  #47: ExecutionContext matches only its declared scope shape ...................................................   Passed    0.07 sec
+        Start  48: ExecutionServices requires both replaceable Kernel ports
+ 48/407 Test  #48: ExecutionServices requires both replaceable Kernel ports .................................................   Passed    0.04 sec
+        Start  49: External effect registration requires replay guard resource and stable identity
+ 49/407 Test  #49: External effect registration requires replay guard resource and stable identity ..........................   Passed    0.04 sec
+        Start  50: Governed document import validates candidates without implicit migration
+ 50/407 Test  #50: Governed document import validates candidates without implicit migration .................................   Passed    0.05 sec
+        Start  51: Infrastructure ports are replaceable without third-party types
+ 51/407 Test  #51: Infrastructure ports are replaceable without third-party types ...........................................   Passed    0.04 sec
+        Start  52: Instance ownership rejects a project that does not own the requested document
+ 52/407 Test  #52: Instance ownership rejects a project that does not own the requested document ............................   Passed    0.04 sec
+        Start  53: Instance ownership retains document and project through terminal observation
+ 53/407 Test  #53: Instance ownership retains document and project through terminal observation .............................   Passed    0.04 sec
+        Start  54: Instance ownership survives reentrant observer failures and allows terminal controls after close
+ 54/407 Test  #54: Instance ownership survives reentrant observer failures and allows terminal controls after close .........   Passed    0.06 sec
+        Start  55: Kernel admission closes before module stop and rejects concurrent lifecycle calls
+ 55/407 Test  #55: Kernel admission closes before module stop and rejects concurrent lifecycle calls ........................   Passed    0.06 sec
+        Start  56: Kernel admission covers workflow and script instance acceptance and publication
+ 56/407 Test  #56: Kernel admission covers workflow and script instance acceptance and publication ..........................   Passed    0.03 sec
+        Start  57: Kernel admission hands asynchronous submission to the scheduler before release
+ 57/407 Test  #57: Kernel admission hands asynchronous submission to the scheduler before release ...........................   Passed    0.04 sec
+        Start  58: Kernel admission retains all command scopes through trace publication
+ 58/407 Test  #58: Kernel admission retains all command scopes through trace publication ....................................   Passed    0.03 sec
+        Start  59: Kernel admission retains all query scopes through trace publication
+ 59/407 Test  #59: Kernel admission retains all query scopes through trace publication ......................................   Passed    0.02 sec
+        Start  60: Kernel module stress failures release all contributions and owned services
+ 60/407 Test  #60: Kernel module stress failures release all contributions and owned services ...............................   Passed    0.03 sec
+        Start  61: Lifecycle close retains other command activities without an admission escape
+ 61/407 Test  #61: Lifecycle close retains other command activities without an admission escape .............................   Passed    0.03 sec
+        Start  62: Lifecycle command registration accepts only fixed governed operations
+ 62/407 Test  #62: Lifecycle command registration accepts only fixed governed operations ....................................   Passed    0.04 sec
+        Start  63: Lifecycle commands create open close and remove without self blocking or business commits
+ 63/407 Test  #63: Lifecycle commands create open close and remove without self blocking or business commits ................   Passed    0.03 sec
+        Start  64: Lifecycle commands reject untrusted targets parameters and admission metadata before mutation
+ 64/407 Test  #64: Lifecycle commands reject untrusted targets parameters and admission metadata before mutation ............   Passed    0.03 sec
+        Start  65: Lifecycle completion retains kernel admission and reports observer failures as post execution errors
+ 65/407 Test  #65: Lifecycle completion retains kernel admission and reports observer failures as post execution errors .....   Passed    0.03 sec
+        Start  66: Lifecycle contributions obey declarations rollback freeze and versioned discovery
+ 66/407 Test  #66: Lifecycle contributions obey declarations rollback freeze and versioned discovery ........................   Passed    0.03 sec
+        Start  67: Lifecycle result schema failure cannot turn a completed transition into a retryable failure
+ 67/407 Test  #67: Lifecycle result schema failure cannot turn a completed transition into a retryable failure ..............   Passed    0.03 sec
+        Start  68: LocalMetricsService aggregates deterministically without exporter control flow
+ 68/407 Test  #68: LocalMetricsService aggregates deterministically without exporter control flow ...........................   Passed    0.03 sec
+        Start  69: LocalTraceService owns span completion and isolates exporters
+ 69/407 Test  #69: LocalTraceService owns span completion and isolates exporters ............................................   Passed    0.03 sec
+        Start  70: LogObservabilityExporter maps spans and metrics to structured log records
+ 70/407 Test  #70: LogObservabilityExporter maps spans and metrics to structured log records ................................   Passed    0.03 sec
+        Start  71: ModuleRegistrar matches every declared contribution kind
+ 71/407 Test  #71: ModuleRegistrar matches every declared contribution kind .................................................   Passed    0.04 sec
+        Start  72: ModuleRegistrar rejects invalid object type ownership and rolls back
+ 72/407 Test  #72: ModuleRegistrar rejects invalid object type ownership and rolls back .....................................   Passed    0.04 sec
+        Start  73: ModuleRegistrar rejects undeclared and missing contributions
+ 73/407 Test  #73: ModuleRegistrar rejects undeclared and missing contributions .............................................   Passed    0.04 sec
+        Start  74: ModuleRuntime converts lifecycle exceptions and rolls back
+ 74/407 Test  #74: ModuleRuntime converts lifecycle exceptions and rolls back ...............................................   Passed    0.03 sec
+        Start  75: ModuleRuntime enforces declared service composition
+ 75/407 Test  #75: ModuleRuntime enforces declared service composition ......................................................   Passed    0.03 sec
+        Start  76: ModuleRuntime rejects conflicting service providers before callbacks
+ 76/407 Test  #76: ModuleRuntime rejects conflicting service providers before callbacks .....................................   Passed    0.03 sec
+        Start  77: ModuleRuntime rejects cross-module contribution ownership before callbacks
+ 77/407 Test  #77: ModuleRuntime rejects cross-module contribution ownership before callbacks ...............................   Passed    0.03 sec
+        Start  78: ModuleRuntime rejects ignored invalid contract status registration
+ 78/407 Test  #78: ModuleRuntime rejects ignored invalid contract status registration .......................................   Passed    0.03 sec
+        Start  79: ModuleRuntime rejects missing incompatible and cyclic dependencies
+ 79/407 Test  #79: ModuleRuntime rejects missing incompatible and cyclic dependencies .......................................   Passed    0.03 sec
+        Start  80: ModuleRuntime reports rollback failure after completing cleanup
+ 80/407 Test  #80: ModuleRuntime reports rollback failure after completing cleanup ..........................................   Passed    0.04 sec
+        Start  81: ModuleRuntime rolls back every registrar contribution
+ 81/407 Test  #81: ModuleRuntime rolls back every registrar contribution ....................................................   Passed    0.03 sec
+        Start  82: ModuleRuntime rolls back services and modules after start failure
+ 82/407 Test  #82: ModuleRuntime rolls back services and modules after start failure ........................................   Passed    0.03 sec
+        Start  83: ModuleRuntime uses deterministic dependency lifecycle ordering
+ 83/407 Test  #83: ModuleRuntime uses deterministic dependency lifecycle ordering ...........................................   Passed    0.03 sec
+        Start  84: Object migration is explicit transactional and rollback safe
+ 84/407 Test  #84: Object migration is explicit transactional and rollback safe .............................................   Passed    0.04 sec
+        Start  85: Object persistence policy denies transient state in durable images
+ 85/407 Test  #85: Object persistence policy denies transient state in durable images .......................................   Passed    0.05 sec
+        Start  86: Object record codec preserves assets and rejects ambiguous asset metadata
+ 86/407 Test  #86: Object record codec preserves assets and rejects ambiguous asset metadata ................................   Passed    0.06 sec
+        Start  87: Object record codec preserves exact schema identity
+ 87/407 Test  #87: Object record codec preserves exact schema identity ......................................................   Passed    0.03 sec
+        Start  88: Object record codec rejects incomplete and malformed schema versions
+ 88/407 Test  #88: Object record codec rejects incomplete and malformed schema versions .....................................   Passed    0.03 sec
+        Start  89: Object type admission checks the final transaction graph before publishing
+ 89/407 Test  #89: Object type admission checks the final transaction graph before publishing ...............................   Passed    0.04 sec
+        Start  90: Object type admission rejects unknown or invalid transaction state
+ 90/407 Test  #90: Object type admission rejects unknown or invalid transaction state .......................................   Passed    0.04 sec
+        Start  91: ObjectTypeRegistry contains callback failures without partial migration
+ 91/407 Test  #91: ObjectTypeRegistry contains callback failures without partial migration ..................................   Passed    0.04 sec
+        Start  92: ObjectTypeRegistry contains reference enumeration failures
+ 92/407 Test  #92: ObjectTypeRegistry contains reference enumeration failures ...............................................   Passed    0.04 sec
+        Start  93: ObjectTypeRegistry freezes deterministic versioned contracts
+ 93/407 Test  #93: ObjectTypeRegistry freezes deterministic versioned contracts .............................................   Passed    0.03 sec
+        Start  94: ObjectTypeRegistry migrates explicitly and leaves source values unchanged
+ 94/407 Test  #94: ObjectTypeRegistry migrates explicitly and leaves source values unchanged ................................   Passed    0.03 sec
+        Start  95: ObjectTypeRegistry normalizes references and runs callbacks outside locks
+ 95/407 Test  #95: ObjectTypeRegistry normalizes references and runs callbacks outside locks ................................   Passed    0.03 sec
+        Start  96: ObjectTypeRegistry rejects ambiguous and incomplete migration contracts
+ 96/407 Test  #96: ObjectTypeRegistry rejects ambiguous and incomplete migration contracts ..................................   Passed    0.04 sec
+        Start  97: Post-commit event and logging failures cannot invert command success
+ 97/407 Test  #97: Post-commit event and logging failures cannot invert command success .....................................   Passed    0.04 sec
+        Start  98: Project only execution rejects unavailable containers before invoking handlers
+ 98/407 Test  #98: Project only execution rejects unavailable containers before invoking handlers ...........................   Passed    0.05 sec
+        Start  99: Project only execution releases activity on validation and handler failures
+ 99/407 Test  #99: Project only execution releases activity on validation and handler failures ..............................   Passed    0.03 sec
+        Start 100: Project only execution retains its container through handler and trace publication
+100/407 Test #100: Project only execution retains its container through handler and trace publication .......................   Passed    0.04 sec
+        Start 101: Project only tasks block container close until cancellation and terminal publication finish
+101/407 Test #101: Project only tasks block container close until cancellation and terminal publication finish ..............   Passed    0.04 sec
+        Start 102: Project only tasks release ownership after executor admission throws
+102/407 Test #102: Project only tasks release ownership after executor admission throws .....................................   Passed    0.03 sec
+        Start 103: Project revision conflicts stale transactions across documents
+103/407 Test #103: Project revision conflicts stale transactions across documents ...........................................   Passed    0.03 sec
+        Start 104: QueryRegistry resolves exact compatible and deprecated versions
+104/407 Test #104: QueryRegistry resolves exact compatible and deprecated versions ..........................................   Passed    0.05 sec
+        Start 105: QueryRuntime enforces global session project and document scopes
+105/407 Test #105: QueryRuntime enforces global session project and document scopes .........................................   Passed    0.03 sec
+        Start 106: QueryRuntime requires capability and an immutable owned document
+106/407 Test #106: QueryRuntime requires capability and an immutable owned document .........................................   Passed    0.04 sec
+        Start 107: Revision models all kernel consistency scopes
+107/407 Test #107: Revision models all kernel consistency scopes ............................................................   Passed    0.03 sec
+        Start 108: Revision validates conflicts duplicates and overflow
+108/407 Test #108: Revision validates conflicts duplicates and overflow .....................................................   Passed    0.03 sec
+        Start 109: ScriptRegistry validates exact references and rejects include cycles
+109/407 Test #109: ScriptRegistry validates exact references and rejects include cycles .....................................   Passed    0.03 sec
+        Start 110: ScriptRuntime evaluates structured control flow through registered ports
+110/407 Test #110: ScriptRuntime evaluates structured control flow through registered ports .................................   Passed    0.03 sec
+        Start 111: ScriptRuntime fails closed at the total execution node limit
+111/407 Test #111: ScriptRuntime fails closed at the total execution node limit .............................................   Passed    0.06 sec
+        Start 112: ScriptRuntime invokes workflows through the workflow boundary
+112/407 Test #112: ScriptRuntime invokes workflows through the workflow boundary ............................................   Passed    0.03 sec
+        Start 113: ScriptRuntime waits for asynchronous commands and propagates cancellation
+113/407 Test #113: ScriptRuntime waits for asynchronous commands and propagates cancellation ................................   Passed    0.03 sec
+        Start 114: ServiceRegistry freeze makes composition immutable
+114/407 Test #114: ServiceRegistry freeze makes composition immutable .......................................................   Passed    0.03 sec
+        Start 115: ServiceRegistry provides typed lookup and stable snapshots
+115/407 Test #115: ServiceRegistry provides typed lookup and stable snapshots ...............................................   Passed    0.03 sec
+        Start 116: ServiceRegistry rejects invalid and ambiguous registrations
+116/407 Test #116: ServiceRegistry rejects invalid and ambiguous registrations ..............................................   Passed    0.03 sec
+        Start 117: Stable object IDs cannot be reincarnated inside one transaction
+117/407 Test #117: Stable object IDs cannot be reincarnated inside one transaction ..........................................   Passed    0.04 sec
+        Start 118: Synchronous read-only commands preserve every execution scope
+118/407 Test #118: Synchronous read-only commands preserve every execution scope ............................................   Passed    0.03 sec
+        Start 119: Transaction changes preserve before and after data for future undo
+119/407 Test #119: Transaction changes preserve before and after data for future undo .......................................   Passed    0.03 sec
+        Start 120: TransactionManager validates begin preconditions and active IDs
+120/407 Test #120: TransactionManager validates begin preconditions and active IDs ..........................................   Passed    0.03 sec
+        Start 121: WorkflowRegistry rejects dependency errors and invalid step shapes
+121/407 Test #121: WorkflowRegistry rejects dependency errors and invalid step shapes .......................................   Passed    0.03 sec
+        Start 122: WorkflowRegistry validates stable acyclic definitions
+122/407 Test #122: WorkflowRegistry validates stable acyclic definitions ....................................................   Passed    0.03 sec
+        Start 123: WorkflowRuntime binds variables and skips false branches
+123/407 Test #123: WorkflowRuntime binds variables and skips false branches .................................................   Passed    0.03 sec
+        Start 124: WorkflowRuntime cancellation is explicit and terminal
+124/407 Test #124: WorkflowRuntime cancellation is explicit and terminal ....................................................   Passed    0.04 sec
+        Start 125: WorkflowRuntime compensates successful steps in reverse order
+125/407 Test #125: WorkflowRuntime compensates successful steps in reverse order ............................................   Passed    0.03 sec
+        Start 126: WorkflowRuntime enforces assertions and deadlines
+126/407 Test #126: WorkflowRuntime enforces assertions and deadlines ........................................................   Passed    0.03 sec
+        Start 127: WorkflowRuntime exposes compensation failure without erasing the original error
+127/407 Test #127: WorkflowRuntime exposes compensation failure without erasing the original error ..........................   Passed    0.04 sec
+        Start 128: WorkflowRuntime launches independent tasks and resumes wait steps
+128/407 Test #128: WorkflowRuntime launches independent tasks and resumes wait steps ........................................   Passed    0.03 sec
+        Start 129: WorkflowRuntime retries only allowlisted command errors
+129/407 Test #129: WorkflowRuntime retries only allowlisted command errors ..................................................   Passed    0.04 sec
+        Start 130: AppKernel initializes and freezes configured persistence
+130/407 Test #130: AppKernel initializes and freezes configured persistence .................................................   Passed    0.07 sec
+        Start 131: AppKernel owns freezes and stops the task stack
+131/407 Test #131: AppKernel owns freezes and stops the task stack ..........................................................   Passed    0.05 sec
+        Start 132: AppKernel persists diagnostic history without changing check results
+132/407 Test #132: AppKernel persists diagnostic history without changing check results .....................................   Passed    0.08 sec
+        Start 133: AppKernel preserves stopping state after bounded task shutdown timeout
+133/407 Test #133: AppKernel preserves stopping state after bounded task shutdown timeout ...................................   Passed    0.16 sec
+        Start 134: AppKernel rejects durable workflow definition drift
+134/407 Test #134: AppKernel rejects durable workflow definition drift ......................................................   Passed    0.08 sec
+        Start 135: AppKernel restores a running workflow at the same idempotent attempt
+135/407 Test #135: AppKernel restores a running workflow at the same idempotent attempt .....................................   Passed    0.14 sec
+        Start 136: Asset admission denies missing store forged or damaged references before commit
+136/407 Test #136: Asset admission denies missing store forged or damaged references before commit ..........................   Passed    0.20 sec
+        Start 137: Asset admission shares exact references but rejects conflicting identities
+137/407 Test #137: Asset admission shares exact references but rejects conflicting identities ...............................   Passed    0.05 sec
+        Start 138: Asset references survive transactions snapshots idempotency and history restart
+138/407 Test #138: Asset references survive transactions snapshots idempotency and history restart ..........................   Passed    0.16 sec
+        Start 139: Asset verification is lock free for document reads and exceptions fail closed
+139/407 Test #139: Asset verification is lock free for document reads and exceptions fail closed ............................   Passed    0.04 sec
+        Start 140: Asynchronous command acceptance and task outcome survive restart
+140/407 Test #140: Asynchronous command acceptance and task outcome survive restart .........................................   Passed    0.08 sec
+        Start 141: Asynchronous commands use CommandRuntime to accept one read-only task
+141/407 Test #141: Asynchronous commands use CommandRuntime to accept one read-only task ....................................   Passed    0.03 sec
+        Start 142: Asynchronous read-only commands preserve global execution scope
+142/407 Test #142: Asynchronous read-only commands preserve global execution scope ..........................................   Passed    0.03 sec
+        Start 143: Bootstrap catalog installation failures retain diagnostics but never open execution admission
+143/407 Test #143: Bootstrap catalog installation failures retain diagnostics but never open execution admission ............   Passed    6.75 sec
+        Start 144: BsThreadPoolExecutor forwards failures and contains exceptions
+144/407 Test #144: BsThreadPoolExecutor forwards failures and contains exceptions ...........................................   Passed    0.04 sec
+        Start 145: BsThreadPoolExecutor runs work and completion exactly once
+145/407 Test #145: BsThreadPoolExecutor runs work and completion exactly once ...............................................   Passed    0.03 sec
+        Start 146: BsThreadPoolExecutor serializes concurrent shutdown callers
+146/407 Test #146: BsThreadPoolExecutor serializes concurrent shutdown callers ..............................................   Passed    0.03 sec
+        Start 147: BsThreadPoolExecutor shutdown drains and rejects new work
+147/407 Test #147: BsThreadPoolExecutor shutdown drains and rejects new work ................................................   Passed    0.04 sec
+        Start 148: BsThreadPoolExecutor validates callbacks and prevents worker deadlock
+148/407 Test #148: BsThreadPoolExecutor validates callbacks and prevents worker deadlock ....................................   Passed    0.04 sec
+        Start 149: Close metadata faults retain committed data without claiming a detached document
+149/407 Test #149: Close metadata faults retain committed data without claiming a detached document .........................   Passed    0.21 sec
+        Start 150: Close snapshot identity accepts document byte identities without filename coupling
+150/407 Test #150: Close snapshot identity accepts document byte identities without filename coupling .......................   Passed   56.34 sec
+        Start 151: Close snapshot identity collision cannot overwrite another document
+151/407 Test #151: Close snapshot identity collision cannot overwrite another document ......................................   Passed    0.36 sec
+        Start 152: Close snapshot identity is opaque fixed lowercase ASCII
+152/407 Test #152: Close snapshot identity is opaque fixed lowercase ASCII ..................................................   Passed    1.16 sec
+        Start 153: Close snapshot identity private generator handles entropy failure without clock fallback
+153/407 Test #153: Close snapshot identity private generator handles entropy failure without clock fallback .................   Passed    0.05 sec
+        Start 154: CommandRuntime persists and replays completed external effects
+154/407 Test #154: CommandRuntime persists and replays completed external effects ...........................................   Passed    0.06 sec
+        Start 155: CommandRuntime replays durable idempotency after process restart
+155/407 Test #155: CommandRuntime replays durable idempotency after process restart .........................................   Passed    0.10 sec
+        Start 156: Crash recovery fails closed on journal gaps
+156/407 Test #156: Crash recovery fails closed on journal gaps ..............................................................   Passed    0.06 sec
+        Start 157: Crash recovery validates object before state
+157/407 Test #157: Crash recovery validates object before state .............................................................   Passed    0.05 sec
+        Start 158: Damaged assets prevent undo and reopen without changing state
+158/407 Test #158: Damaged assets prevent undo and reopen without changing state ............................................   Passed    0.20 sec
+        Start 159: Diagnostic persistence failure is isolated after the in-memory report
+159/407 Test #159: Diagnostic persistence failure is isolated after the in-memory report ....................................   Passed    0.05 sec
+        Start 160: Document close keeps state attached when snapshot persistence fails
+160/407 Test #160: Document close keeps state attached when snapshot persistence fails ......................................   Passed    0.06 sec
+        Start 161: Document lifecycle catalog rejects ownership drift and tampering
+161/407 Test #161: Document lifecycle catalog rejects ownership drift and tampering .........................................   Passed    0.06 sec
+        Start 162: Document lifecycle catalog survives close open remove and restart
+162/407 Test #162: Document lifecycle catalog survives close open remove and restart ........................................   Passed    0.13 sec
+        Start 163: Document open refuses unsupported durable object versions and remains detached
+163/407 Test #163: Document open refuses unsupported durable object versions and remains detached ...........................   Passed    0.09 sec
+        Start 164: DocumentRuntime blocks close while a document task remains active
+164/407 Test #164: DocumentRuntime blocks close while a document task remains active ........................................   Passed    0.03 sec
+        Start 165: Effect guards fail before durable claim and handler execution
+165/407 Test #165: Effect guards fail before durable claim and handler execution ............................................   Passed    0.05 sec
+        Start 166: Executor admission faults finish accepted tasks and do not strand scheduler capacity
+166/407 Test #166: Executor admission faults finish accepted tasks and do not strand scheduler capacity .....................   Passed    0.13 sec
+        Start 167: External effects acquire guards before exclusive resources and durable claims
+167/407 Test #167: External effects acquire guards before exclusive resources and durable claims ............................   Passed    0.06 sec
+        Start 168: External effects require registered guards and durable persistence at bootstrap
+168/407 Test #168: External effects require registered guards and durable persistence at bootstrap ..........................   Passed    0.05 sec
+        Start 169: External-effect recovery never replays executing work automatically
+169/407 Test #169: External-effect recovery never replays executing work automatically ......................................   Passed    0.09 sec
+        Start 170: FilesystemAssetStore concurrent instances publish one stable asset
+170/407 Test #170: FilesystemAssetStore concurrent instances publish one stable asset .......................................   Passed    0.82 sec
+        Start 171: FilesystemAssetStore denies forged references missing files and corruption
+171/407 Test #171: FilesystemAssetStore denies forged references missing files and corruption ...............................   Passed    0.06 sec
+        Start 172: FilesystemAssetStore enforces bounds before publication
+172/407 Test #172: FilesystemAssetStore enforces bounds before publication ..................................................   Passed    0.04 sec
+        Start 173: FilesystemAssetStore isolates hash failures and permits verified orphan reuse
+173/407 Test #173: FilesystemAssetStore isolates hash failures and permits verified orphan reuse ............................   Passed    0.05 sec
+        Start 174: FilesystemAssetStore publication failure does not replace existing filesystem state
+174/407 Test #174: FilesystemAssetStore publication failure does not replace existing filesystem state ......................   Passed    0.05 sec
+        Start 175: FilesystemAssetStore publishes verified immutable binary content
+175/407 Test #175: FilesystemAssetStore publishes verified immutable binary content .........................................   Passed    0.05 sec
+        Start 176: FilesystemSnapshotStore isolates path shaped identities and rejects oversized payloads
+176/407 Test #176: FilesystemSnapshotStore isolates path shaped identities and rejects oversized payloads ...................   Passed    0.06 sec
+        Start 177: FilesystemSnapshotStore publishes immutable payloads atomically
+177/407 Test #177: FilesystemSnapshotStore publishes immutable payloads atomically ..........................................   Passed    0.04 sec
+        Start 178: Governed batch import persistence faults preserve state events and retry through the gateway
+178/407 Test #178: Governed batch import persistence faults preserve state events and retry through the gateway .............   Passed   16.58 sec
+        Start 179: Governed batch import rejects unresolved and foreign document references without publishing its prefix
+179/407 Test #179: Governed batch import rejects unresolved and foreign document references without publishing its prefix ...   Passed    2.28 sec
+        Start 180: History cursor and redo material survive a normal restart
+180/407 Test #180: History cursor and redo material survive a normal restart ................................................   Passed    0.09 sec
+        Start 181: History recovery fails closed on semantically invalid journal metadata
+181/407 Test #181: History recovery fails closed on semantically invalid journal metadata ...................................   Passed    0.08 sec
+        Start 182: History recovery rejects unknown fields with a valid digest
+182/407 Test #182: History recovery rejects unknown fields with a valid digest ..............................................   Passed    0.07 sec
+        Start 183: History restores exact object versions after migration and restart
+183/407 Test #183: History restores exact object versions after migration and restart .......................................   Passed    0.09 sec
+        Start 184: HistoryRuntime executes undo redo branch replacement and barriers
+184/407 Test #184: HistoryRuntime executes undo redo branch replacement and barriers ........................................   Passed    0.04 sec
+        Start 185: HistoryRuntime reverses create update and remove change shapes
+185/407 Test #185: HistoryRuntime reverses create update and remove change shapes ...........................................   Passed    0.04 sec
+        Start 186: Instance ownership retains cancellation until terminal checkpoint retry succeeds
+186/407 Test #186: Instance ownership retains cancellation until terminal checkpoint retry succeeds .........................   Passed    0.05 sec
+        Start 187: Journal and outcome hash faults leave no partial history or idempotency
+187/407 Test #187: Journal and outcome hash faults leave no partial history or idempotency ..................................   Passed    0.32 sec
+        Start 188: Journal failure changes neither document nor history
+188/407 Test #188: Journal failure changes neither document nor history .....................................................   Passed    0.06 sec
+        Start 189: Journal write admission authenticates an existing revision chain before extending it
+189/407 Test #189: Journal write admission authenticates an existing revision chain before extending it .....................   Passed    0.77 sec
+        Start 190: Journal write admission failure publishes no command state history events or receipt
+190/407 Test #190: Journal write admission failure publishes no command state history events or receipt .....................   Passed    0.08 sec
+        Start 191: Journal write admission preserves catalog and snapshot ownership before the first journal
+191/407 Test #191: Journal write admission preserves catalog and snapshot ownership before the first journal ................   Passed    1.32 sec
+        Start 192: Journal write admission read faults roll back or quarantine without releasing ownership
+192/407 Test #192: Journal write admission read faults roll back or quarantine without releasing ownership ..................   Passed    2.90 sec
+        Start 193: Journal write admission reauthenticates live heads and rejects document reassignment
+193/407 Test #193: Journal write admission reauthenticates live heads and rejects document reassignment .....................   Passed    1.03 sec
+        Start 194: Journal write admission refuses authenticated but discontinuous existing chains
+194/407 Test #194: Journal write admission refuses authenticated but discontinuous existing chains ..........................   Passed    1.17 sec
+        Start 195: Journal write admission rejects invalid revision transitions before storing them
+195/407 Test #195: Journal write admission rejects invalid revision transitions before storing them .........................   Passed    0.03 sec
+        Start 196: Journal write admission rejects stale project and document revisions without a durable change
+196/407 Test #196: Journal write admission rejects stale project and document revisions without a durable change ............   Passed    0.73 sec
+        Start 197: Journal write admission validates every document local revision scope
+197/407 Test #197: Journal write admission validates every document local revision scope ....................................   Passed    0.04 sec
+        Start 198: JsonconsAdapter converts parse and range errors
+198/407 Test #198: JsonconsAdapter converts parse and range errors ..........................................................   Passed    0.03 sec
+        Start 199: JsonconsAdapter round trips every Kernel Value kind
+199/407 Test #199: JsonconsAdapter round trips every Kernel Value kind ......................................................   Passed    0.03 sec
+        Start 200: JsonconsAdapter validates Kernel Schema without exposing jsoncons
+200/407 Test #200: JsonconsAdapter validates Kernel Schema without exposing jsoncons ........................................   Passed    0.05 sec
+        Start 201: Kernel admission covers lifecycle persistence until the public operation returns
+201/407 Test #201: Kernel admission covers lifecycle persistence until the public operation returns .........................   Passed    8.41 sec
+        Start 202: Kernel concurrency closing excludes query admission and permits clean reopen
+202/407 Test #202: Kernel concurrency closing excludes query admission and permits clean reopen .............................   Passed   38.13 sec
+        Start 203: Kernel concurrency identical command keys commit once and replay after restart
+203/407 Test #203: Kernel concurrency identical command keys commit once and replay after restart ...........................   Passed   30.54 sec
+        Start 204: Kernel concurrency queries block close and shutdown without mutating state
+204/407 Test #204: Kernel concurrency queries block close and shutdown without mutating state ...............................   Passed   40.33 sec
+        Start 205: Kernel concurrency revision competitors leave exactly one durable winner
+205/407 Test #205: Kernel concurrency revision competitors leave exactly one durable winner .................................   Passed   28.34 sec
+        Start 206: Kernel final drain covers failed bootstrap failed module stop and configuring states
+206/407 Test #206: Kernel final drain covers failed bootstrap failed module stop and configuring states .....................   Passed    0.02 sec
+        Start 207: Kernel final drain rejects inline self waits and terminal callback shutdown
+207/407 Test #207: Kernel final drain rejects inline self waits and terminal callback shutdown ..............................   Passed    0.03 sec
+        Start 208: Kernel final drain rejects shutdown from task work without sealing admission
+208/407 Test #208: Kernel final drain rejects shutdown from task work without sealing admission .............................   Passed    0.03 sec
+        Start 209: Kernel final drain runs before executor destruction despite persistent stop failure
+209/407 Test #209: Kernel final drain runs before executor destruction despite persistent stop failure ......................   Passed    0.03 sec
+        Start 210: Kernel task stress cancellation after completion preserves success
+210/407 Test #210: Kernel task stress cancellation after completion preserves success .......................................   Passed   52.32 sec
+        Start 211: Kernel task stress cancellation races completion without losing resources
+211/407 Test #211: Kernel task stress cancellation races completion without losing resources ................................   Passed   50.05 sec
+        Start 212: Kernel task stress repeated cancellation preserves running ownership
+212/407 Test #212: Kernel task stress repeated cancellation preserves running ownership .....................................   Passed   49.59 sec
+        Start 213: Kernel task stress shutdown timeout retains ownership until actual completion
+213/407 Test #213: Kernel task stress shutdown timeout retains ownership until actual completion ............................   Passed   30.67 sec
+        Start 214: Kernel workflow stress cancellation races command completion
+214/407 Test #214: Kernel workflow stress cancellation races command completion .............................................   Passed   70.30 sec
+        Start 215: Kernel workflow stress late cancellation preserves completed steps
+215/407 Test #215: Kernel workflow stress late cancellation preserves completed steps .......................................   Passed   62.58 sec
+        Start 216: Kernel workflow stress running cancellation retains accepted commits
+216/407 Test #216: Kernel workflow stress running cancellation retains accepted commits .....................................   Passed   72.82 sec
+        Start 217: Legacy execution roots authenticate terminal payloads and indexed policy before migration
+217/407 Test #217: Legacy execution roots authenticate terminal payloads and indexed policy before migration ................   Passed    4.88 sec
+        Start 218: Legacy execution roots cannot silently repair a completed project migration
+218/407 Test #218: Legacy execution roots cannot silently repair a completed project migration ..............................   Passed    2.26 sec
+        Start 219: Legacy execution roots migrate projects without documents and never replay history
+219/407 Test #219: Legacy execution roots migrate projects without documents and never replay history .......................   Passed    4.31 sec
+        Start 220: Legacy execution roots reject malformed authenticated identities before project installation
+220/407 Test #220: Legacy execution roots reject malformed authenticated identities before project installation .............   Passed   32.71 sec
+        Start 221: Legacy execution roots require an exact once only verified project set
+221/407 Test #221: Legacy execution roots require an exact once only verified project set ...................................   Passed    0.73 sec
+        Start 222: Legacy execution roots require matching durable document ownership including tombstones
+222/407 Test #222: Legacy execution roots require matching durable document ownership including tombstones ..................   Passed    3.72 sec
+        Start 223: Legacy execution roots roll back read faults and allow a clean Host retry
+223/407 Test #223: Legacy execution roots roll back read faults and allow a clean Host retry ................................   Passed   12.08 sec
+        Start 224: Legacy execution roots upgrade schema v8 with terminal task and effect projects
+224/407 Test #224: Legacy execution roots upgrade schema v8 with terminal task and effect projects ..........................   Passed    1.75 sec
+        Start 225: Lifecycle catalog concurrent snapshots never pair an old version with new state
+225/407 Test #225: Lifecycle catalog concurrent snapshots never pair an old version with new state ..........................   Passed    0.02 sec
+        Start 226: Lifecycle catalog document readers remain coherent during membership churn
+226/407 Test #226: Lifecycle catalog document readers remain coherent during membership churn ...............................   Passed    0.03 sec
+        Start 227: Lifecycle catalog document versions survive removal and recreation
+227/407 Test #227: Lifecycle catalog document versions survive removal and recreation .......................................   Passed    0.03 sec
+        Start 228: Lifecycle catalog exhausted counters never publish wrapped revisions
+228/407 Test #228: Lifecycle catalog exhausted counters never publish wrapped revisions .....................................   Passed    0.02 sec
+        Start 229: Lifecycle catalog invalidation is separate from nonzero business revisions
+229/407 Test #229: Lifecycle catalog invalidation is separate from nonzero business revisions ...............................   Passed    1.94 sec
+        Start 230: Lifecycle catalog long task close rollback invalidates observable transitional states
+230/407 Test #230: Lifecycle catalog long task close rollback invalidates observable transitional states ....................   Passed    0.03 sec
+        Start 231: Lifecycle catalog new Hosts invalidate old epochs while retaining business revisions
+231/407 Test #231: Lifecycle catalog new Hosts invalidate old epochs while retaining business revisions .....................   Passed    3.98 sec
+        Start 232: Lifecycle catalog partial close invalidates only affected directory scopes
+232/407 Test #232: Lifecycle catalog partial close invalidates only affected directory scopes ...............................   Passed    3.43 sec
+        Start 233: Lifecycle catalog project versions reject unchanged-state ABA
+233/407 Test #233: Lifecycle catalog project versions reject unchanged-state ABA ............................................   Passed    0.02 sec
+        Start 234: Lifecycle catalog rejected reservations invalidate but untouched rejections do not
+234/407 Test #234: Lifecycle catalog rejected reservations invalidate but untouched rejections do not .......................   Passed    2.29 sec
+        Start 235: Lifecycle catalog scopes isolate projects and exclude activity observations
+235/407 Test #235: Lifecycle catalog scopes isolate projects and exclude activity observations ..............................   Passed    0.02 sec
+        Start 236: Lifecycle catalog snapshots expose coherent intermediate and failed states
+236/407 Test #236: Lifecycle catalog snapshots expose coherent intermediate and failed states ...............................   Passed    2.49 sec
+        Start 237: Lifecycle command persistence failure preserves failed state and rejects apparent success
+237/407 Test #237: Lifecycle command persistence failure preserves failed state and rejects apparent success ................   Passed    0.89 sec
+        Start 238: Lifecycle commands cannot close a project while its long task is pending or publishing
+238/407 Test #238: Lifecycle commands cannot close a project while its long task is pending or publishing ...................   Passed    0.02 sec
+        Start 239: Lifecycle commands persist all fixed transitions across fresh Hosts
+239/407 Test #239: Lifecycle commands persist all fixed transitions across fresh Hosts ......................................   Passed    3.90 sec
+        Start 240: Lifecycle creation reserves identity during authenticated reads and releases rejected reservations
+240/407 Test #240: Lifecycle creation reserves identity during authenticated reads and releases rejected reservations .......   Passed    2.89 sec
+        Start 241: Object admission failure leaves no journal history event or completed idempotency
+241/407 Test #241: Object admission failure leaves no journal history event or completed idempotency ........................   Passed    0.12 sec
+        Start 242: Persistence Host admission error and exception precede all initialization SQL
+242/407 Test #242: Persistence Host admission error and exception precede all initialization SQL ............................   Passed    0.03 sec
+        Start 243: Persistence Host policy quarantine retains ownership and last verified diagnostics
+243/407 Test #243: Persistence Host policy quarantine retains ownership and last verified diagnostics .......................   Passed    0.27 sec
+        Start 244: Persistence Host refuses second service before changing active claims
+244/407 Test #244: Persistence Host refuses second service before changing active claims ....................................   Passed    0.37 sec
+        Start 245: Persistence Host rejects a second Kernel without abandoning a running command
+245/407 Test #245: Persistence Host rejects a second Kernel without abandoning a running command ............................   Passed    1.50 sec
+        Start 246: Persistence preserves object schema versions across journal snapshot and idempotency
+246/407 Test #246: Persistence preserves object schema versions across journal snapshot and idempotency .....................   Passed    0.07 sec
+        Start 247: Persistence stage failures preserve history revisions and idempotency across restart
+247/407 Test #247: Persistence stage failures preserve history revisions and idempotency across restart .....................   Passed    1.66 sec
+        Start 248: PersistenceService captures immutable snapshots aligned with the journal
+248/407 Test #248: PersistenceService captures immutable snapshots aligned with the journal .................................   Passed    0.07 sec
+        Start 249: PersistenceService fails closed on journal corruption
+249/407 Test #249: PersistenceService fails closed on journal corruption ....................................................   Passed    0.05 sec
+        Start 250: PersistenceService migrates and appends an idempotent state journal
+250/407 Test #250: PersistenceService migrates and appends an idempotent state journal ......................................   Passed    0.05 sec
+        Start 251: PersistenceService rejects snapshots ahead of the journal
+251/407 Test #251: PersistenceService rejects snapshots ahead of the journal ................................................   Passed    0.04 sec
+        Start 252: PersistenceService restores a snapshot and replays only its journal tail
+252/407 Test #252: PersistenceService restores a snapshot and replays only its journal tail .................................   Passed    0.06 sec
+        Start 253: PersistenceService rolls back migration exceptions and rejects newer schemas
+253/407 Test #253: PersistenceService rolls back migration exceptions and rejects newer schemas .............................   Passed    0.03 sec
+        Start 254: Project catalog migration and writes roll back database and hash faults
+254/407 Test #254: Project catalog migration and writes roll back database and hash faults ..................................   Passed   14.94 sec
+        Start 255: Project catalog persists independent empty projects across reconnect
+255/407 Test #255: Project catalog persists independent empty projects across reconnect .....................................   Passed    0.61 sec
+        Start 256: Project catalog read faults preserve durable state and permit a clean retry
+256/407 Test #256: Project catalog read faults preserve durable state and permit a clean retry ..............................   Passed    1.72 sec
+        Start 257: Project catalog rejects tampered control columns payload versions and timestamps
+257/407 Test #257: Project catalog rejects tampered control columns payload versions and timestamps .........................   Passed    5.58 sec
+        Start 258: Project catalog rollback failures quarantine the connection without durable partial state
+258/407 Test #258: Project catalog rollback failures quarantine the connection without durable partial state ................   Passed    2.27 sec
+        Start 259: Project catalog serialization failures never install partial metadata
+259/407 Test #259: Project catalog serialization failures never install partial metadata ....................................   Passed    2.57 sec
+        Start 260: Project catalog validates states and reports interrupted transitions without rewriting
+260/407 Test #260: Project catalog validates states and reports interrupted transitions without rewriting ...................   Passed    0.72 sec
+        Start 261: Project migration includes journal only and snapshot only ownership
+261/407 Test #261: Project migration includes journal only and snapshot only ownership ......................................   Passed    0.51 sec
+        Start 262: Project migration requires exact verified legacy ownership and never reseeds
+262/407 Test #262: Project migration requires exact verified legacy ownership and never reseeds .............................   Passed    0.73 sec
+        Start 263: Project only task acceptance rollback and terminal persistence retain ownership
+263/407 Test #263: Project only task acceptance rollback and terminal persistence retain ownership ..........................   Passed    0.03 sec
+        Start 264: Project revision recovery isolates projects with mixed open and detached children
+264/407 Test #264: Project revision recovery isolates projects with mixed open and detached children ........................   Passed    3.08 sec
+        Start 265: Project revision survives restart with no loaded children and a subsequent commit
+265/407 Test #265: Project revision survives restart with no loaded children and a subsequent commit ........................   Passed    9.27 sec
+        Start 266: Project schema refuses missing catalog tables or migration markers on reconnect
+266/407 Test #266: Project schema refuses missing catalog tables or migration markers on reconnect ..........................   Passed    1.68 sec
+        Start 267: ProjectRuntime fails closed at both durable writes of create open and close
+267/407 Test #267: ProjectRuntime fails closed at both durable writes of create open and close ..............................   Passed    8.67 sec
+        Start 268: ProjectRuntime gates document membership and closes only its owned children
+268/407 Test #268: ProjectRuntime gates document membership and closes only its owned children ..............................   Passed    3.51 sec
+        Start 269: ProjectRuntime migrates verified legacy roots once and refuses missing project repair
+269/407 Test #269: ProjectRuntime migrates verified legacy roots once and refuses missing project repair ....................   Passed    0.72 sec
+        Start 270: ProjectRuntime owns empty project identity and lifecycle without persistence
+270/407 Test #270: ProjectRuntime owns empty project identity and lifecycle without persistence .............................   Passed    0.03 sec
+        Start 271: ProjectRuntime persists empty and multi-document containers without automatic child reopen
+271/407 Test #271: ProjectRuntime persists empty and multi-document containers without automatic child reopen ...............   Passed    3.32 sec
+        Start 272: ProjectRuntime recovers interrupted empty transitions as Failed without rewriting evidence
+272/407 Test #272: ProjectRuntime recovers interrupted empty transitions as Failed without rewriting evidence ...............   Passed    1.30 sec
+        Start 273: ProjectRuntime rejects configured reopen and inconsistent durable child state
+273/407 Test #273: ProjectRuntime rejects configured reopen and inconsistent durable child state ............................   Passed    1.00 sec
+        Start 274: ProjectRuntime retains truthful partial document close on persistence failure
+274/407 Test #274: ProjectRuntime retains truthful partial document close on persistence failure ............................   Passed    2.61 sec
+        Start 275: ProjectRuntime seals all child admission during coordinated durable close
+275/407 Test #275: ProjectRuntime seals all child admission during coordinated durable close ................................   Passed   69.95 sec
+        Start 276: Recovery installation reentry preserves a removed identity or a fully opened winner
+276/407 Test #276: Recovery installation reentry preserves a removed identity or a fully opened winner ......................   Passed    2.98 sec
+        Start 277: Recovery installation write failures cannot expose executable partial documents
+277/407 Test #277: Recovery installation write failures cannot expose executable partial documents ..........................   Passed   22.31 sec
+        Start 278: Recovery keeps staggered document snapshots on one project revision chain
+278/407 Test #278: Recovery keeps staggered document snapshots on one project revision chain ................................   Passed    0.07 sec
+        Start 279: Recovery object admission runs before module initialization and rolls back contributions
+279/407 Test #279: Recovery object admission runs before module initialization and rolls back contributions .................   Passed    0.16 sec
+        Start 280: Recovery refuses stripped or malformed object versions despite a valid digest
+280/407 Test #280: Recovery refuses stripped or malformed object versions despite a valid digest ............................   Passed    0.13 sec
+        Start 281: Recovery rejects missing assets including historical references
+281/407 Test #281: Recovery rejects missing assets including historical references ..........................................   Passed    0.13 sec
+        Start 282: Rollback failure quarantines persistence until a fresh recovery
+282/407 Test #282: Rollback failure quarantines persistence until a fresh recovery ..........................................   Passed    0.09 sec
+        Start 283: SQLite Host session admits exactly one simultaneous contender
+283/407 Test #283: SQLite Host session admits exactly one simultaneous contender ............................................   Passed    0.06 sec
+        Start 284: SQLite Host session excludes aliases until backend destruction across threads
+284/407 Test #284: SQLite Host session excludes aliases until backend destruction across threads ............................   Passed    1.60 sec
+        Start 285: SQLite Host session fault proxy refuses or forwards real ownership
+285/407 Test #285: SQLite Host session fault proxy refuses or forwards real ownership .......................................   Passed    0.04 sec
+        Start 286: SQLite Host session identifies private memory without claiming file durability
+286/407 Test #286: SQLite Host session identifies private memory without claiming file durability ...........................   Passed    0.03 sec
+        Start 287: SQLite Host session refuses admission inside a transaction
+287/407 Test #287: SQLite Host session refuses admission inside a transaction ...............................................   Passed    0.04 sec
+        Start 288: SQLite Host session rejects policy drift on repeated admission and transactions
+288/407 Test #288: SQLite Host session rejects policy drift on repeated admission and transactions ..........................   Passed    0.04 sec
+        Start 289: SQLite Host session sets and reads back explicit file durability policy
+289/407 Test #289: SQLite Host session sets and reads back explicit file durability policy ..................................   Passed    0.04 sec
+        Start 290: Safe external effects require explicit same-key retry after failure
+290/407 Test #290: Safe external effects require explicit same-key retry after failure ......................................   Passed    0.05 sec
+        Start 291: Scheduler arbitrates project read and write claims
+291/407 Test #291: Scheduler arbitrates project read and write claims .......................................................   Passed    0.06 sec
+        Start 292: Scheduler bounded shutdown reports non-cooperative work
+292/407 Test #292: Scheduler bounded shutdown reports non-cooperative work ..................................................   Passed    0.16 sec
+        Start 293: Scheduler honors priority FIFO and dependency outcome
+293/407 Test #293: Scheduler honors priority FIFO and dependency outcome ....................................................   Passed    0.02 sec
+        Start 294: Schema v8 upgrade retains documents until verified project migration completes
+294/407 Test #294: Schema v8 upgrade retains documents until verified project migration completes ...........................   Passed    0.60 sec
+        Start 295: Sha256HashService produces stable strong content digests
+295/407 Test #295: Sha256HashService produces stable strong content digests .................................................   Passed    0.03 sec
+        Start 296: Shutdown acknowledgement Kernel retries failed executor stops before revoking modules
+296/407 Test #296: Shutdown acknowledgement Kernel retries failed executor stops before revoking modules ....................   Passed    0.05 sec
+        Start 297: Shutdown acknowledgement concurrent callers cannot bypass pending drain
+297/407 Test #297: Shutdown acknowledgement concurrent callers cannot bypass pending drain ..................................   Passed    0.03 sec
+        Start 298: Shutdown acknowledgement empty scheduler seals configuration and handles maximum timeout
+298/407 Test #298: Shutdown acknowledgement empty scheduler seals configuration and handles maximum timeout .................   Passed    0.04 sec
+        Start 299: Shutdown acknowledgement invalid timeout never seals Kernel admission
+299/407 Test #299: Shutdown acknowledgement invalid timeout never seals Kernel admission ....................................   Passed    0.03 sec
+        Start 300: Shutdown acknowledgement rejects reentrant executor shutdown
+300/407 Test #300: Shutdown acknowledgement rejects reentrant executor shutdown .............................................   Passed    0.03 sec
+        Start 301: Shutdown acknowledgement standalone scheduler retries even before start
+301/407 Test #301: Shutdown acknowledgement standalone scheduler retries even before start ..................................   Passed    0.03 sec
+        Start 302: Shutdown acknowledgement stopped schedulers cannot restart their drained executor
+302/407 Test #302: Shutdown acknowledgement stopped schedulers cannot restart their drained executor ........................   Passed    0.05 sec
+        Start 303: Shutdown acknowledgement waits for terminal observation publication
+303/407 Test #303: Shutdown acknowledgement waits for terminal observation publication ......................................   Passed    0.06 sec
+        Start 304: Snapshot anchor preserves journal deletion against snapshot resurrection
+304/407 Test #304: Snapshot anchor preserves journal deletion against snapshot resurrection .................................   Passed    0.86 sec
+        Start 305: Snapshot anchor reads reject forged watermarks and untrusted journal history
+305/407 Test #305: Snapshot anchor reads reject forged watermarks and untrusted journal history .............................   Passed    2.99 sec
+        Start 306: Snapshot anchor rejects content contradicting authenticated journal objects
+306/407 Test #306: Snapshot anchor rejects content contradicting authenticated journal objects ..............................   Passed    1.19 sec
+        Start 307: Snapshot anchor validates document ownership beyond captured watermark
+307/407 Test #307: Snapshot anchor validates document ownership beyond captured watermark ...................................   Passed    0.56 sec
+        Start 308: Snapshot history identity preserves detached and removed source ownership
+308/407 Test #308: Snapshot history identity preserves detached and removed source ownership ................................   Passed    3.62 sec
+        Start 309: Snapshot history identity rejects foreign configured ownership without replacing durable state
+309/407 Test #309: Snapshot history identity rejects foreign configured ownership without replacing durable state ...........   Passed    1.85 sec
+        Start 310: Snapshot history identity restores journal only snapshot only and mixed owners
+310/407 Test #310: Snapshot history identity restores journal only snapshot only and mixed owners ...........................   Passed    2.79 sec
+        Start 311: Snapshot ordering defines deterministic ties without promising last capture time
+311/407 Test #311: Snapshot ordering defines deterministic ties without promising last capture time .........................   Passed    0.95 sec
+        Start 312: Snapshot ordering prioritizes journal watermarks across clock rollback and projects
+312/407 Test #312: Snapshot ordering prioritizes journal watermarks across clock rollback and projects ......................   Passed    1.67 sec
+        Start 313: Snapshot ordering refuses damaged newest state and immutable retry before reopening
+313/407 Test #313: Snapshot ordering refuses damaged newest state and immutable retry before reopening ......................   Passed    1.92 sec
+        Start 314: Snapshot publication failures preserve the indexed state and permit orphan reuse
+314/407 Test #314: Snapshot publication failures preserve the indexed state and permit orphan reuse .........................   Passed    0.85 sec
+        Start 315: Snapshot storage keys bound sharing violation retries without bypassing verification
+315/407 Test #315: Snapshot storage keys bound sharing violation retries without bypassing verification .....................   Passed    0.21 sec
+        Start 316: Snapshot storage keys enforce identity and payload envelope budgets
+316/407 Test #316: Snapshot storage keys enforce identity and payload envelope budgets ......................................   Passed    0.07 sec
+        Start 317: Snapshot storage keys isolate exact byte identities and bound filenames
+317/407 Test #317: Snapshot storage keys isolate exact byte identities and bound filenames ..................................   Passed    1.10 sec
+        Start 318: Snapshot storage keys preserve case sensitive legacy ownership
+318/407 Test #318: Snapshot storage keys preserve case sensitive legacy ownership ...........................................   Passed    0.21 sec
+        Start 319: Snapshot storage keys preserve concurrent immutable publication
+319/407 Test #319: Snapshot storage keys preserve concurrent immutable publication ..........................................   Passed    0.43 sec
+        Start 320: Snapshot storage keys recover mixed legacy and encoded persistence without changing ownership
+320/407 Test #320: Snapshot storage keys recover mixed legacy and encoded persistence without changing ownership ............   Passed    0.43 sec
+        Start 321: Snapshot storage keys refuse mismatched envelopes and ambiguous formats
+321/407 Test #321: Snapshot storage keys refuse mismatched envelopes and ambiguous formats ..................................   Passed    0.08 sec
+        Start 322: Snapshot storage keys reject ambiguous directory normalization before creating files
+322/407 Test #322: Snapshot storage keys reject ambiguous directory normalization before creating files .....................   Passed    0.02 sec
+        Start 323: Snapshot storage keys reject hardlinks directories and mismatched canonical case
+323/407 Test #323: Snapshot storage keys reject hardlinks directories and mismatched canonical case .........................   Passed    0.03 sec
+        Start 324: Snapshot storage keys retain legacy asset content and reference format
+324/407 Test #324: Snapshot storage keys retain legacy asset content and reference format ...................................   Passed    0.10 sec
+        Start 325: Snapshot storage keys retry temporary collisions without touching existing files
+325/407 Test #325: Snapshot storage keys retry temporary collisions without touching existing files .........................   Passed    0.14 sec
+        Start 326: Snapshot storage keys support native long directory paths
+326/407 Test #326: Snapshot storage keys support native long directory paths ................................................   Passed    0.12 sec
+        Start 327: Snapshot storage keys verify a concurrent winner held by a reader
+327/407 Test #327: Snapshot storage keys verify a concurrent winner held by a reader ........................................   Passed    0.07 sec
+        Start 328: SpdlogLogService validates output configuration
+328/407 Test #328: SpdlogLogService validates output configuration ..........................................................   Passed    0.11 sec
+        Start 329: SpdlogLogService writes human and JSONL records
+329/407 Test #329: SpdlogLogService writes human and JSONL records ..........................................................   Passed    0.05 sec
+        Start 330: SqlitePersistenceBackend executes parameterized control-plane SQL
+330/407 Test #330: SqlitePersistenceBackend executes parameterized control-plane SQL ........................................   Passed    0.05 sec
+        Start 331: SqlitePersistenceBackend owns low-level transaction state
+331/407 Test #331: SqlitePersistenceBackend owns low-level transaction state ................................................   Passed    0.03 sec
+        Start 332: SqlitePersistenceBackend persists metadata to a file
+332/407 Test #332: SqlitePersistenceBackend persists metadata to a file .....................................................   Passed    0.04 sec
+        Start 333: SqlitePersistenceBackend rejects ambiguous and unsupported values
+333/407 Test #333: SqlitePersistenceBackend rejects ambiguous and unsupported values ........................................   Passed    0.03 sec
+        Start 334: SqlitePersistenceBackend validates connection options
+334/407 Test #334: SqlitePersistenceBackend validates connection options ....................................................   Passed    0.04 sec
+        Start 335: Standalone quarantined persistence cannot be reinitialized
+335/407 Test #335: Standalone quarantined persistence cannot be reinitialized ...............................................   Passed    0.07 sec
+        Start 336: Task acceptance backend failures discard prepared work and preserve retry contracts
+336/407 Test #336: Task acceptance backend failures discard prepared work and preserve retry contracts ......................   Passed    0.76 sec
+        Start 337: Task completion exposes persistence failure without changing task outcome
+337/407 Test #337: Task completion exposes persistence failure without changing task outcome ................................   Passed    0.06 sec
+        Start 338: Task history marks interrupted work and rejects tampering
+338/407 Test #338: Task history marks interrupted work and rejects tampering ................................................   Passed    0.07 sec
+        Start 339: TaskRuntime cancellation and deadline are cooperative
+339/407 Test #339: TaskRuntime cancellation and deadline are cooperative ....................................................   Passed    0.03 sec
+        Start 340: TaskRuntime captures immutable document revisions and marks stale results
+340/407 Test #340: TaskRuntime captures immutable document revisions and marks stale results ................................   Passed    0.03 sec
+        Start 341: TaskRuntime enforces registry identity and monotonic progress
+341/407 Test #341: TaskRuntime enforces registry identity and monotonic progress ............................................   Passed    0.04 sec
+        Start 342: TaskRuntime exposes pending running and cancel-requested transitions
+342/407 Test #342: TaskRuntime exposes pending running and cancel-requested transitions .....................................   Passed    0.03 sec
+        Start 343: TomlConfigAdapter converts syntax and unsupported value errors
+343/407 Test #343: TomlConfigAdapter converts syntax and unsupported value errors ...........................................   Passed    0.03 sec
+        Start 344: TomlConfigAdapter parses and serializes human configuration
+344/407 Test #344: TomlConfigAdapter parses and serializes human configuration ..............................................   Passed    0.02 sec
+        Start 345: TransactionManager leaves memory unchanged when journaling fails
+345/407 Test #345: TransactionManager leaves memory unchanged when journaling fails .........................................   Passed    0.04 sec
+        Start 346: TransactionManager persists write-ahead journal before the memory swap
+346/407 Test #346: TransactionManager persists write-ahead journal before the memory swap ...................................   Passed    0.06 sec
+        Start 347: Unsafe external-effect failures become reconcile or indeterminate
+347/407 Test #347: Unsafe external-effect failures become reconcile or indeterminate ........................................   Passed    0.07 sec
+        Start 348: Version one journal writes become an undo barrier
+348/407 Test #348: Version one journal writes become an undo barrier ........................................................   Passed    0.08 sec
+        Start 349: Version three journals preserve versioned history without asset fields
+349/407 Test #349: Version three journals preserve versioned history without asset fields ...................................   Passed    0.08 sec
+        Start 350: Workflow checkpoint errors preserve bounded cause chains and legacy leaves
+350/407 Test #350: Workflow checkpoint errors preserve bounded cause chains and legacy leaves ...............................   Passed    0.07 sec
+        Start 351: Workflow checkpoint failure prevents handler execution
+351/407 Test #351: Workflow checkpoint failure prevents handler execution ...................................................   Passed    0.11 sec
+        Start 352: Workflow checkpoint rejects malformed and overdeep persisted causes
+352/407 Test #352: Workflow checkpoint rejects malformed and overdeep persisted causes ......................................   Passed    0.07 sec
+        Start 353: Workflow checkpoints round trip and fail closed on step tampering
+353/407 Test #353: Workflow checkpoints round trip and fail closed on step tampering ........................................   Passed    0.08 sec
+        Start 354: Workflow history fails closed on its durable ownership read and permits a clean restart
+354/407 Test #354: Workflow history fails closed on its durable ownership read and permits a clean restart ..................   Passed    0.17 sec
+        Start 355: Workflow history preserves all terminal states under a verified closed owner
+355/407 Test #355: Workflow history preserves all terminal states under a verified closed owner .............................   Passed    0.11 sec
+        Start 356: Workflow history recovers terminal instances without reopening detached closed or removed containers
+356/407 Test #356: Workflow history recovers terminal instances without reopening detached closed or removed containers .....   Passed    0.45 sec
+        Start 357: Workflow history refuses missing or foreign ownership and nonterminal closed documents
+357/407 Test #357: Workflow history refuses missing or foreign ownership and nonterminal closed documents ...................   Passed    0.22 sec
+        Start 358: Workflow post-command checkpoint faults preserve one durable command across restart
+358/407 Test #358: Workflow post-command checkpoint faults preserve one durable command across restart ......................   Passed    1.42 sec
+        Start 359: integration.lifecycle_catalog_epoch_restart
+359/407 Test #359: integration.lifecycle_catalog_epoch_restart ..............................................................   Passed    1.30 sec
+        Start 360: integration.close_snapshot_identity_restart
+360/407 Test #360: integration.close_snapshot_identity_restart ..............................................................   Passed   16.06 sec
+        Start 361: architecture.asan_configuration_guards
+361/407 Test #361: architecture.asan_configuration_guards ...................................................................   Passed    2.01 sec
+        Start 362: architecture.verified_program_exit_guards
+362/407 Test #362: architecture.verified_program_exit_guards ................................................................   Passed    0.41 sec
+        Start 363: integration.kernel_final_drain_process
+363/407 Test #363: integration.kernel_final_drain_process ...................................................................   Passed    1.59 sec
+        Start 364: integration.persistence_host_session_process
+364/407 Test #364: integration.persistence_host_session_process .............................................................   Passed    0.87 sec
+        Start 365: integration.persistence_host_initialization_process
+365/407 Test #365: integration.persistence_host_initialization_process ......................................................   Passed    1.36 sec
+        Start 366: integration.kernel_benchmark_smoke_component_memory
+366/407 Test #366: integration.kernel_benchmark_smoke_component_memory ......................................................   Passed    0.26 sec
+        Start 367: integration.kernel_benchmark_smoke_component_sqlite
+367/407 Test #367: integration.kernel_benchmark_smoke_component_sqlite ......................................................   Passed    0.60 sec
+        Start 368: integration.kernel_benchmark_smoke_gateway_memory
+368/407 Test #368: integration.kernel_benchmark_smoke_gateway_memory ........................................................   Passed    0.10 sec
+        Start 369: integration.kernel_benchmark_smoke_gateway_sqlite
+369/407 Test #369: integration.kernel_benchmark_smoke_gateway_sqlite ........................................................   Passed    3.30 sec
+        Start 370: integration.kernel_benchmark_smoke_journal_sqlite
+370/407 Test #370: integration.kernel_benchmark_smoke_journal_sqlite ........................................................   Passed    0.89 sec
+        Start 371: integration.kernel_benchmark_smoke_lifecycle_memory
+371/407 Test #371: integration.kernel_benchmark_smoke_lifecycle_memory ......................................................   Passed    0.08 sec
+        Start 372: integration.kernel_benchmark_smoke_lifecycle_sqlite
+372/407 Test #372: integration.kernel_benchmark_smoke_lifecycle_sqlite ......................................................   Passed    4.63 sec
+        Start 373: architecture.kernel_public_api_boundary
+373/407 Test #373: architecture.kernel_public_api_boundary ..................................................................   Passed    0.24 sec
+        Start 374: architecture.occt_boundary_negative_probes
+374/407 Test #374: architecture.occt_boundary_negative_probes ...............................................................   Passed    0.26 sec
+        Start 375: architecture.host_state_boundary_negative_probes
+375/407 Test #375: architecture.host_state_boundary_negative_probes .........................................................   Passed    0.23 sec
+        Start 376: architecture.host_document_compile_boundary
+376/407 Test #376: architecture.host_document_compile_boundary ..............................................................   Passed   15.31 sec
+        Start 377: integration.kernel_crash_command-staged
+377/407 Test #377: integration.kernel_crash_command-staged ..................................................................   Passed    1.79 sec
+        Start 378: integration.kernel_crash_journal-inserted
+378/407 Test #378: integration.kernel_crash_journal-inserted ................................................................   Passed    1.42 sec
+        Start 379: integration.kernel_crash_outcome-written
+379/407 Test #379: integration.kernel_crash_outcome-written .................................................................   Passed    1.59 sec
+        Start 380: integration.kernel_crash_transaction-before-commit
+380/407 Test #380: integration.kernel_crash_transaction-before-commit .......................................................   Passed    1.39 sec
+        Start 381: integration.kernel_crash_transaction-committed
+381/407 Test #381: integration.kernel_crash_transaction-committed ...........................................................   Passed    1.54 sec
+        Start 382: integration.kernel_crash_command-returned
+382/407 Test #382: integration.kernel_crash_command-returned ................................................................   Passed    1.07 sec
+        Start 383: integration.kernel_crash_undo-inserted
+383/407 Test #383: integration.kernel_crash_undo-inserted ...................................................................   Passed    2.06 sec
+        Start 384: integration.kernel_crash_undo-committed
+384/407 Test #384: integration.kernel_crash_undo-committed ..................................................................   Passed    1.45 sec
+        Start 385: integration.kernel_crash_redo-inserted
+385/407 Test #385: integration.kernel_crash_redo-inserted ...................................................................   Passed    1.27 sec
+        Start 386: integration.kernel_crash_redo-committed
+386/407 Test #386: integration.kernel_crash_redo-committed ..................................................................   Passed    2.20 sec
+        Start 387: integration.kernel_crash_task-handler
+387/407 Test #387: integration.kernel_crash_task-handler ....................................................................   Passed    1.22 sec
+        Start 388: integration.kernel_crash_workflow-handler
+388/407 Test #388: integration.kernel_crash_workflow-handler ................................................................   Passed    2.10 sec
+        Start 389: integration.kernel_crash_workflow-committed
+389/407 Test #389: integration.kernel_crash_workflow-committed ..............................................................   Passed    1.71 sec
+        Start 390: integration.kernel_crash_effect-safe
+390/407 Test #390: integration.kernel_crash_effect-safe .....................................................................   Passed    1.32 sec
+        Start 391: integration.kernel_crash_effect-idempotent
+391/407 Test #391: integration.kernel_crash_effect-idempotent ...............................................................   Passed    1.88 sec
+        Start 392: integration.kernel_crash_effect-reconcile
+392/407 Test #392: integration.kernel_crash_effect-reconcile ................................................................   Passed    1.09 sec
+        Start 393: integration.kernel_crash_effect-never
+393/407 Test #393: integration.kernel_crash_effect-never ....................................................................   Passed    1.55 sec
+        Start 394: integration.kernel_crash_workflow-effect-reconcile
+394/407 Test #394: integration.kernel_crash_workflow-effect-reconcile .......................................................   Passed    1.93 sec
+        Start 395: integration.kernel_crash_workflow-effect-never
+395/407 Test #395: integration.kernel_crash_workflow-effect-never ...........................................................   Passed    1.99 sec
+        Start 396: integration.kernel_crash_asset-before-write
+396/407 Test #396: integration.kernel_crash_asset-before-write ..............................................................   Passed    1.94 sec
+        Start 397: integration.kernel_crash_asset-before-rename
+397/407 Test #397: integration.kernel_crash_asset-before-rename .............................................................   Passed    1.81 sec
+        Start 398: integration.kernel_crash_asset-after-rename
+398/407 Test #398: integration.kernel_crash_asset-after-rename ..............................................................   Passed    1.86 sec
+        Start 399: integration.kernel_crash_asset-published
+399/407 Test #399: integration.kernel_crash_asset-published .................................................................   Passed    2.10 sec
+        Start 400: integration.kernel_crash_asset-reference-inserted
+400/407 Test #400: integration.kernel_crash_asset-reference-inserted ........................................................   Passed    1.63 sec
+        Start 401: integration.kernel_crash_asset-reference-committed
+401/407 Test #401: integration.kernel_crash_asset-reference-committed .......................................................   Passed    1.48 sec
+        Start 402: integration.kernel_crash_asset-missing-committed
+402/407 Test #402: integration.kernel_crash_asset-missing-committed .........................................................   Passed    1.20 sec
+        Start 403: integration.kernel_crash_asset-corrupt-committed
+403/407 Test #403: integration.kernel_crash_asset-corrupt-committed .........................................................   Passed    1.22 sec
+        Start 404: integration.kernel_headless_cli_roundtrip
+404/407 Test #404: integration.kernel_headless_cli_roundtrip ................................................................   Passed    0.06 sec
+        Start 405: integration.kernel_headless_task_roundtrip
+405/407 Test #405: integration.kernel_headless_task_roundtrip ...............................................................   Passed    0.05 sec
+        Start 406: integration.kernel_persistence_process_recovery
+406/407 Test #406: integration.kernel_persistence_process_recovery ..........................................................   Passed    1.91 sec
+        Start 407: integration.kernel_workflow_process_recovery
+407/407 Test #407: integration.kernel_workflow_process_recovery .............................................................   Passed    1.80 sec
+
+100% tests passed, 0 tests failed out of 407
+
+Total Test time (real) = 1012.72 sec

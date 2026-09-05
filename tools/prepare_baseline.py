@@ -89,9 +89,9 @@ def main() -> None:
     configure.append(f"-DFETCHCONTENT_SOURCE_DIR_SQLITE={destination.as_posix()}")
     evidence = ROOT / "docs/evidence/m0"
     evidence.mkdir(parents=True, exist_ok=True)
-    (evidence / "source-manifest.json").write_text(json.dumps(records, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (evidence / "source-manifest.json").write_text(json.dumps(records, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     (ROOT / "build").mkdir(exist_ok=True)
-    (ROOT / "build/donor-configure.json").write_text(json.dumps(configure, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (ROOT / "build/donor-configure.json").write_text(json.dumps(configure, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print("reference-verified: 两个固定版本、五个 Git 依赖与 SQLite 归档；配置参数在 build/donor-configure.json")
 
 

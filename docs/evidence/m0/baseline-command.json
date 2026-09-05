@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "tools/run_baseline.py",
+    "--runs",
+    "3",
+    "--samples",
+    "64"
+  ],
+  "cwd": "J:\\Code\\Kernel",
+  "started_utc": "2026-09-05T12:00:31.315694+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 250.59453520001261
+}

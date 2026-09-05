@@ -47,16 +47,18 @@ def main() -> None:
         "timestamp_utc": datetime.now(timezone.utc).isoformat(),
         "platform": platform.platform(), "logical_processors": os.cpu_count(),
         "configuration": "Release",
+        "harness_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         "binary_sha256": hashlib.sha256(executable.read_bytes()).hexdigest(),
         "cmake_cache_sha256": hashlib.sha256((args.build / "CMakeCache.txt").read_bytes()).hexdigest(),
         "limitations": ["初始串行基线，无新内核 A/B", "每进程至多 64 次，不报告 P99",
                         "仅 1k 对象；并发、参数规模、任务尾延迟及完整容量矩阵未运行"],
+        "completed": False,
         "runs": [],
     }
     manifest = ROOT / "docs/evidence/m0/source-manifest.json"
     summary["source_manifest_sha256"] = hashlib.sha256(manifest.read_bytes()).hexdigest()
     summary["configure_command"] = json.loads((ROOT / "build/donor-configure.json").read_text(encoding="utf-8"))
-    (evidence / "baseline-index.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (evidence / "baseline-index.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     cases = [("gateway", "memory"), ("gateway", "sqlite"), ("component", "memory"),
              ("component", "sqlite"), ("journal", "sqlite"), ("lifecycle", "memory"), ("lifecycle", "sqlite")]
     for run in range(args.runs):
@@ -66,12 +68,13 @@ def main() -> None:
                        "--output-root", str(raw_root)]
             completed = subprocess.run(command, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=600)
             label = f"{family}-{storage}-run{run + 1}"
-            (evidence / (label + ".log")).write_text(completed.stdout + completed.stderr, encoding="utf-8")
+            (evidence / (label + ".log")).write_text(completed.stdout + completed.stderr, encoding="utf-8", newline="\n")
             marker = "benchmark-verified: "
             paths = [line.removeprefix(marker).strip() for line in completed.stdout.splitlines() if line.startswith(marker)]
-            record = {"name": label, "command": command, "exit_code": completed.returncode, "completed_marker": len(paths) == 1}
+            record = {"name": label, "command": command, "exit_code": completed.returncode,
+                      "completed_marker": len(paths) == 1, "report_verified": False}
             summary["runs"].append(record)
-            (evidence / "baseline-index.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            (evidence / "baseline-index.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
             if completed.returncode != 0 or len(paths) != 1:
                 raise RuntimeError(f"基线失败，保留原始输出：{label}")
             report = Path(paths[0]).resolve()
@@ -80,7 +83,12 @@ def main() -> None:
             data = json.loads(report.read_text(encoding="utf-8"))
             validate_report(data, family, storage, args.samples)
             shutil.copyfile(report, evidence / (label + ".json"))
+            record.update(report_verified=True, report_file=label + ".json",
+                          report_sha256=hashlib.sha256(report.read_bytes()).hexdigest())
+            (evidence / "baseline-index.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
             print(f"baseline-verified: {label}", flush=True)
+    summary["completed"] = True
+    (evidence / "baseline-index.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     print(f"baseline-matrix-verified: {evidence}；初始七场景、多进程轮次完成；缺口见索引")
 
 

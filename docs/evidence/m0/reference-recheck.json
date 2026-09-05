@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "tools/prepare_baseline.py",
+    "--repository",
+    "J:/Code/LaserCNCv3.0",
+    "--dependency-cache",
+    "J:/Code/LaserCNCv3.0/build/vs2022/_deps"
+  ],
+  "cwd": "J:\\Code\\Kernel",
+  "started_utc": "2026-09-05T12:00:27.968091+00:00",
+  "exit_code": 0,
+  "elapsed_seconds": 3.2383890000055544
+}
